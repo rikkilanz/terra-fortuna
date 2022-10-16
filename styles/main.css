@@ -1,0 +1,525 @@
+/* Fonts */
+/* Lust Sans Bold
+
+font-family: lust-sans, sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+
+
+Lust Sans Italic
+
+font-family: lust-sans, sans-serif;
+
+font-weight: 400;
+
+font-style: italic;
+
+
+Lust Sans Regular
+
+font-family: lust-sans, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+
+
+Lust Sans Bold Italic
+
+font-family: lust-sans, sans-serif;
+
+font-weight: 700;
+
+font-style: italic; */
+
+
+/* ---------- GLOBAL STYLES ---------- */
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    /* overflow: hidden; */
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    position: relative;
+    top: 15vh;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+h2 {
+    text-align: center;
+    color: #d3ae57;
+    font-family: 'lust-sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+h3 {
+    color: #f1cc73;
+    font-family: 'lust-sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+h4 {
+    color: #d3ae57;
+    font-family: 'lust-sans', sans-serif;
+    padding: 5px 0px;
+    font-weight: 800;
+}
+
+footer {
+    position: relative;
+    top: 15vh;
+    background-color: #010b13;
+    color: white;
+}
+
+/* ---------- HELPER CLASS ---------- */
+.is-flex {
+    display: flex;
+}
+
+.is-none {
+    display: none;
+}
+
+.bg-centre {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card {
+    padding: 20px;
+    text-align: center;
+    /* border-top: solid .5px #d3ae57; */
+}
+
+
+/* ---------- HEADER ---------- */
+.header {
+    background-color: #010b13;
+    display: flex;
+    padding: 20px 30px;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    box-shadow: -1px 4px 5px 0px rgba(71,71,71,.65);
+    
+}
+
+.header a{
+    color: #d3ae57;
+    font-family: lust-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header img {
+    height: 50px;
+    width: auto;
+}
+
+.img-wrap {
+    flex-basis: 20%;
+    max-width: 20%;
+}
+
+/* ---------- HEADER BURGER ---------- */
+
+/* .menu-wrap {
+    margin-top: 10px;
+} */
+
+.menu-wrap {
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: flex-end; */
+    flex-basis: 80%;
+    max-width: 80%;
+}
+
+.mobile-menu{
+    transition: transform 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.line-1, .line-2, .line-3{
+    border-top: 3px solid #d3ae57;
+    display: block;
+    transition: margin 0.5s, transform 0.5s;
+    width: 50px;
+}
+
+.line-2{
+    margin: 10px 0;
+}
+
+.toggle.mobile-menu{
+    padding: 25px 0;
+}
+
+.toggle.mobile-menu .line-1,
+.toggle.mobile-menu .line-2, 
+.toggle.mobile-menu .line-3 {
+    transform: rotate(45deg);
+}
+
+.toggle.mobile-menu .line-2{
+    margin: -3px 0;
+    opacity: 0;
+}
+
+.toggle.mobile-menu .line-3{
+    transform: rotate(-45deg);
+}
+
+.mobile-menu.toggle {
+    transform: rotate(180deg);
+  }
+
+
+/* ---------- NAVIGATION ---------- */
+.gn-nav {
+    position: absolute;
+    background-color: #010b13;
+    top: 94px;
+    right: 0px;
+    left: 0px;
+    display: none;
+}
+
+/* .gn-nav.is-open {
+    display: block;
+} */
+
+.gn-items li {
+    border-top: solid 1px #d3ae57;
+}
+
+.gn-items a {
+    text-align: center;
+    display: block;
+    padding: 30px 15px;
+}
+
+/* ---------- FLICKITY ---------- */
+
+/* ---------- GALLERY ---------- */
+
+.hero-slider {
+    position: relative;
+    /* top: 94px; */
+    width: 100%;
+    height: auto;
+    background-color: #010b13;
+}
+
+.hero-slider .carousel-cell {
+    height: 350px;
+    width: 100%;
+    opacity: 0.6;
+}
+.hero-slider .img-1 {
+    background-image: url(../images/house-image-1-resized.jpg);
+}
+
+.hero-slider .img-2 {
+    background-image: url(../images/house-image-2-resized.jpg);
+}
+
+.hero-slider .img-3 {
+    background-image: url(../images/house-image-3-resized.jpg);
+}
+
+.hero-slider .img-4 {
+    background-image: url(../images/house-image-4-resized.jpg);
+}
+
+.hero-slider .img-5 {
+    background-image: url(../images/house-image-5-resized.jpg);
+}
+
+/* ---------- QUOTE SECTION ---------- */
+.quote-section {
+    position: relative;
+    background-color: #010b13;
+    color: #f1cc73;
+    font-family: 'lust-sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.quote-section blockquote {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ---------- MISSION SECTION ---------- */
+.mission-section {
+    background-color: #010b13;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mission-section .card {
+    max-width: 368px;
+}
+
+.mission-section p {
+    margin-top: 5px;
+}
+
+.mission-section div:last-child{
+    padding-bottom: 40px;
+}
+
+
+/* ---------- OUR TEAM SECTION ---------- */
+.team-section {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    width: 100%;
+
+}
+
+.team-section .team {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 386px;
+}
+
+.team-section .card {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.team-section img {
+    width: 75px;
+    border: #d3ae57 solid 3px;
+}
+
+/* ---------- FAQ SECTION ---------- */
+.faq-section {
+    padding: 20px;
+}
+
+.accordion-container {
+    padding: 20px 0;
+}
+
+/* ---------- FOOTER SECTION ---------- */
+.ftr {
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ftr-nav ul{
+    display: flex;
+}
+
+.ftr-nav li {
+    margin: 0px 5px;
+}
+
+.social-icons {
+    filter: invert(100%);
+    display: flex;
+    margin: 10px;
+}
+
+.social-icons li {
+    margin: 0px 5px;
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+
+@media (min-width: 576px) {
+    .quote-section blockquote {
+        font-size: 1.2em;
+        padding: 20px 0px;
+    }
+
+    .team-section img {
+        width: 175px;
+    }
+
+    .faq-section {
+        max-width: 580px;
+        margin: 0 auto;
+    }
+
+    .ftr-nav li:last-child{
+        display: inline-block;
+    }
+}
+
+@media (min-width: 768px) {
+    .menu-wrap {
+        display: none;
+    }
+
+    .gn-nav{
+        max-width: 100%;
+        flex-basis: 100%;
+        display: block !important;
+        position: static;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .gn-items {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: row;
+    }
+
+    .gn-items li:nth-child(4){
+        display: none;
+    }
+
+    .gn-items li {
+        border: none;
+    }
+    
+    .gn-items a {
+        padding: 15px 15px;
+    }
+
+    .mission-section{
+        flex-direction: row;
+        justify-content: center;
+        background-color: #010b13;
+        padding: 10px 20px 30px;
+    }
+    
+}
+
+@media (min-width: 992px) {
+    main{
+        top: 10vh;
+    }
+
+    .logomark {
+        display: none;
+    }
+
+    .header img{
+        height: 20px;
+        width: auto;
+    }
+
+    .header {
+        align-items: center;
+    }
+
+    .wordmark {
+        /* height: 20px;
+        width: 100%; */
+        display: inline;
+    }
+
+    .quote-section blockquote{
+        max-width: 1100px;
+        padding: 20px 0px;
+        font-size: 1.2em;
+    }
+
+    .team-section .team {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 992px;
+        flex-flow: nowrap;
+        width: 100%;
+    }
+
+    .team-section .card {
+        flex-basis: 25%;
+        max-width: 25%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    a:hover {
+        /* font-size: 20px; */
+        color: #f1cc73;
+        text-decoration: underline;
+    }
+
+    .gn-items li:nth-child(4){
+        display: inline;
+    }
+
+    .team-section .team {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1400px;
+        flex-flow: nowrap;
+        width: 100%;
+    }
+
+    .team-section img {
+        width:275px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .hero {
+        height: 100vh;
+        width: 100%;
+    }
+    .hero-slider {
+        display: none;
+    }
+    .video {
+        display: flex;
+        width: 100%;
+        height: 120vh;
+        justify-content: center;
+        background: rgb(0,0,0);
+        background: linear-gradient(180deg, rgba(0,0,0,0) 46%, rgba(1,11,19,1) 100%);
+        /* background-color: #010b13; */
+    }
+    
+    .hero-video {
+        position: relative;
+        /* top: 194px; */
+        right: 0;
+        max-width: 100%;
+        max-height: 100%;
+        z-index: -1;
+    }
+}
