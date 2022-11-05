@@ -64,8 +64,8 @@ h2 {
     text-align: center;
     color: #d3ae57;
     font-family: 'lust-sans', sans-serif;
-    font-weight: 400;
-    font-size: 24px;
+    font-weight: 600;
+    font-size: 48px;
 }
 
 h3 {
@@ -77,9 +77,10 @@ h3 {
 
 h4 {
     color: #d3ae57;
-    font-family: 'lust-sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding: 5px 0px;
-    font-weight: 800;
+    font-weight: 700;
+    font-size: 21px;
 }
 
 footer {
@@ -258,6 +259,11 @@ footer {
     background-image: url(../images/house-image-5-resized.jpg);
 }
 
+/* ---------- BANNER SECTION ---------- */
+.hero {
+    display: flex;
+}
+
 /* ---------- QUOTE SECTION ---------- */
 .quote-section {
     position: relative;
@@ -268,7 +274,7 @@ footer {
     font-style: normal;
     line-height: 1.5;
     padding: 20px;
-    font-size: 16px;
+    font-size: 24px;
     text-align: center;
 }
 
@@ -336,6 +342,7 @@ footer {
     padding: 20px 0;
 }
 
+
 /* ---------- FOOTER SECTION ---------- */
 .ftr {
     padding: 60px 20px;
@@ -343,23 +350,97 @@ footer {
     flex-direction: column;
     align-items: center;
 }
+.ftr-nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.ftr-nav div {
+    padding: 0 50px;
+}
 
 .ftr-nav ul{
     display: flex;
+    flex-direction: column;
 }
 
 .ftr-nav li {
-    margin: 0px 5px;
+    margin: 5px 0px;
+}
+
+.ftr-connect {
+    color: white;
 }
 
 .social-icons {
     filter: invert(100%);
-    display: flex;
-    margin: 10px;
 }
 
-.social-icons li {
-    margin: 0px 5px;
+/* .social-icons li {
+    margin: 0px 0px;
+} */
+
+/* ---------- ABOUT PAGE SECTION ---------- */
+.about-1 {
+    padding: 20px 0;
+
+}
+
+.about-1 .box {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about-2 {
+    background-color: #010b13;
+    color: white;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.about-2 .box {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about-section h2{
+    padding: 10px;
+}
+
+.about-section p {
+    text-align: center;
+}
+
+.about-team h2{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.testimonial-section .container{
+    display: flex;
+    text-align: center;
+    margin: 20px;
+    border-top: #d3ae57 solid 3px;
+}
+
+.testimonial-section article {
+    flex-basis: 33.33%;
+    /* color: white; */
+    /* background-color: #010b13; */
+    padding: 80px 20px;
+}
+
+.testimonial-section .border-side {
+    border-left: #d3ae57 solid 1px;
+    border-right: #d3ae57 solid 1px;
+    padding: 0 20px;
+}
+
+.testimonial-section blockquote{
+    font-style: italic;
+    font-size: 20px;
+    padding-bottom: 30px;
 }
 
 /* ---------- MEDIA QUERIES ---------- */
@@ -501,7 +582,7 @@ footer {
         height: 100vh;
         width: 100%;
     }
-    .hero-slider {
+    .hero .hero-slider {
         display: none;
     }
     .video {

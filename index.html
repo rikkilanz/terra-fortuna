@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terra Fortuna</title>
+    <title>Terra Fortuna | Home</title>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/lightbox.css">
     <link rel="stylesheet" href="styles/flickity.css">
@@ -30,15 +30,19 @@
         </div>
         <nav class="gn-nav">
             <ul class="gn-items">
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#mission">Our Mission</a></li>
-                <li><a href="#team">Our Team</a></li>
-                <li><a href="#faq">FAQ</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="hero">
+            <!-- <div class="search">
+                <label for="search"></label>
+                <input type="text" id="search" name="search">
+            </div> -->
             <div class="hero-slider">
                 <div class="carousel-cell img-1 bg-centre"></div>
                 <div class="carousel-cell img-2 bg-centre"></div>
@@ -58,23 +62,25 @@
         </section>
         <section id="mission" class="mission-section">
             <div class="card">
-                <h3>Mission</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quisquam labore culpa.</p>
+                <h3>Value</h3>
+                <p>“Teamwork and inclusion of everyone to work well with synergy.”
+                </p>
             </div>
             <div class="card">
-                <h3>Value</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, doloremque facere officia sunt saepe sint.</p>
+                <h3>Mission</h3>
+                <p>"To provide excellent service on real estate while maintaining the highest ethical standards and making a positive impact on our community."</p>
             </div>
             <div class="card">
                 <h3>Goal</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, impedit!</p>
+                <p>“Guide and provide great service for real estate endeavours for our clients.”
+                </p>
             </div>
         </section>
         <section id="team" class="team-section">
             <h2>Meet The Team</h2>
             <div class="team">
                 <div class="card">
-                    <a href="images/profile-1.jpg" data-lightbox="image">
+                    <a href="images/profile-1.jpg" data-lightbox="image" data-title="Leo Roach is an Investor Group Specialist fo Terra Fortuna. He has specialized in his role with our team for 10 years, and he still continues to learn from his job.">
                         <div class="profile-image">
                             <img src="images/profile-1.jpg" alt="">
                         </div>
@@ -83,7 +89,7 @@
                     <p class="profile-title">Investor Group Specialist</p>
                 </div>
                 <div class="card">
-                    <a href="images/profile-2.jpg" data-lightbox="image">
+                    <a href="images/profile-2.jpg" data-lightbox="image" data-title="Arvin Mccann is the Dynamic Factors Consultant for Terra Fortuna. His ways of communicating with people have made special connections with them. His father also created Terra Fortuna from the ground up!">
                         <div class="profile-image">
                             <img src="images/profile-2.jpg" alt="">
                         </div>
@@ -92,7 +98,7 @@
                     <p class="profile-title">Dynamic Factors Consultant</p>
                 </div>
                 <div class="card">
-                    <a href="images/profile-3.jpg" data-lightbox="image">
+                    <a href="images/profile-3.jpg" data-lightbox="image" data-title="Tiffany Santos has served the company well with her skills. She's presented an immense, well rounded image for her team, especially junior teammates. They've all looked up to her for her amazing talent!">
                         <div class="profile-image">
                             <img src="images/profile-3.jpg" alt="">
                         </div>
@@ -101,7 +107,7 @@
                     <p class="profile-title">Lead Operations Associate</p>
                 </div>
                 <div class="card">
-                    <a href="images/profile-4.jpg" data-lightbox="image">
+                    <a href="images/profile-4.jpg" data-lightbox="image" data-title="Ria Gomez is Terra Fortuna's Internal Marketing Associate. Her skills dealing with clients has been an amazing asset to the company.">
                         <div class="profile-image">
                             <img src="images/profile-4.jpg" alt="">
                         </div>
@@ -111,54 +117,114 @@
                 </div>
             </div>
         </section>
-        <section id="faq" class="faq-section">
+        <section class="about-section">
+            <!-- <div class="hero-slider banner">
+                <div class="carousel-cell img-3 bg-centre"></div>
+            </div> -->
+            <div class="about-info">
+                <div class="about-1">
+                    <div class="box">
+                        <h2>Who We Are</h2>
+                        <p>Terra Fortuna offers the ultimate real estate services with privacy, security and efficiency. Our experience with our clients has given us the opportunity to grow more than who we wanted to be.</p>
+                    </div>
+                </div>
+                <div class="about-2">
+                    <div class="box">
+                        <h2>Why Terra Fortuna?</h2>
+                        <p>You can always count on Terra Fortuna for real estate services. Whether you are buying, selling, or counselling, Terra Fortuna will be there to provide them for you with great experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="faq" class="faq-section" itemscope itemtype="https://schema.org/FAQPage">
             <h2>FAQ</h2>
             <div class="accordion-container">
                 <div class="ac">
-                  <h2 class="ac-header">
-                    <button type="button" class="ac-trigger">Lorem ipsum dolor?</button>
-                  </h2>
+                  <span itemprop="mainEntity" itemtype="https://schema.org/Question">
+                      <h2 class="ac-header">
+                        <button type="button" class="ac-trigger"><span itemprop="name">Where are you located?</span></button>
+                      </h2>
+                  </span>
                   <div class="ac-panel">
-                    <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="ac-text" itemscope itemprop="suggestedAnswer" itemtype="https://schema.org/Answer">
+                        <span itemprop="text">
+                        We operate our physical services at Terra Fortuna <br>
+                        2785 Robson St, Vancouver, B.C. V6B 3K9
+                        </span>
+                    </p>
                   </div>
                 </div>
                 <div class="ac">
-                  <h2 class="ac-header">
-                    <button type="button" class="ac-trigger">Consectetur adipiscing elit?</button>
-                  </h2>
-                  <div class="ac-panel">
-                    <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  </div>
-                </div>
-                <div class="ac">
-                  <h2 class="ac-header">
-                    <button type="button" class="ac-trigger">Ipsum dolor?</button>
-                  </h2>
-                  <div class="ac-panel">
-                    <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  </div>
-                </div>
-                <div class="ac">
-                    <h2 class="ac-header">
-                      <button type="button" class="ac-trigger">Adipiscing elit?</button>
-                    </h2>
+                    <span itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <h2 class="ac-header">
+                          <button type="button" class="ac-trigger"><span itemprop="name">What services do you offer?</span></button>
+                        </h2>
+                    </span>
                     <div class="ac-panel">
-                      <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <p class="ac-text" itemscope itemprop="suggestedAnswer" itemtype="https://schema.org/Answer">
+                          <span itemprop="text">
+                            We offer a variety of real estate services, from purchasing your first home, selling properties, as well as free real estate consulting.
+                          </span>
+                      </p>
                     </div>
-                  </div>
-                  <div class="ac">
-                    <h2 class="ac-header">
-                      <button type="button" class="ac-trigger">Ipsum dolor?</button>
-                    </h2>
+                </div>
+                <div class="ac">
+                    <span itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <h2 class="ac-header">
+                          <button type="button" class="ac-trigger"><span itemprop="name">How can I join the team?</span></button>
+                        </h2>
+                    </span>
                     <div class="ac-panel">
-                      <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <p class="ac-text" itemscope itemprop="suggestedAnswer" itemtype="https://schema.org/Answer">
+                          <span itemprop="text">
+                            If you think you have the skills and experience to join our team, feel free to contact us at email: hello@terrafortuna.com
+                          </span>
+                      </p>
                     </div>
-                  </div>
+                </div>
+                <div class="ac">
+                    <span itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <h2 class="ac-header">
+                          <button type="button" class="ac-trigger"><span itemprop="name">How can I contact the team?</span></button>
+                        </h2>
+                    </span>
+                    <div class="ac-panel">
+                      <p class="ac-text" itemscope itemprop="suggestedAnswer" itemtype="https://schema.org/Answer">
+                          <span itemprop="text">
+                            We are reachable from our social media @terrafortuna. <br>We are also one call away at: (123) 456-7890. <br>Feel free to email us as well at: hello@terra-fortuna.com
+                          </span>
+                      </p>
+                    </div>
+                </div>
               </div>
+        </section>
+        <section class="testimonial-section">
+            <h2>Client Testimonials</h2>
+            <div class="container">
+                <article>
+                    <blockquote>
+                        "Terra Fortuna has been my go to team for any real estate advice."
+                    </blockquote>
+                    <p>- Carolus Batul</p>
+                </article>
+                <article>
+                    <blockquote class="border-side">
+                       "I've struggled understanding how to buy my first-home. With Terra Fortuna and their team, they've helped me purchase my first home! I recommend them for someone who's just starting out a new life in Canada!"
+                    </blockquote>
+                    <p>- Sango Clémence</p>
+                </article>
+                <article>
+                    <blockquote>
+                       "Terra Fortuna has made me feel like I belong as part of a big family. They've never failed to lend me their support!"
+                    </blockquote>
+                    <p>- Karina Gernot</p>
+                </article>
+                
+            </div>
         </section>
     </main>
     <footer class="ftr">
-        <nav class="ftr-nav">
+        <!-- <nav class="ftr-nav">
             <ul>
                 <li><a href="#">Sitemap</a></li>
                 <li><a href="#">About Us</a></li>
@@ -173,7 +239,56 @@
             <li>
                 <a href="#"><img src="images/iconmonstr-instagram-11.svg" alt="instagram icon"></a>
             </li>
-        </ul>
+        </ul> -->
+        <div class="ftr-nav">
+            <div class="ftr-contact" itemscope itemtype="https://schema.org/LocalBusiness">
+                <h3>Contact</h3>
+                <p>
+                    <span itemprop="name">Terra Fortuna</span> <br>
+                    <span itemprop="address">
+                        <span itemtype="https://schema.org/PostalAddress">
+                            <span itemprop="streetAddress">2785 Robson St</span><br>
+                            <span itemprop="addressLocality">Vancouver</span>, <span itemprop="addressRegion">BC</span> <br>
+                            <span itemprop="postalCode">V6B 3K9</span>
+                        </span>
+                    </span>
+                </p>
+                <ul>
+                    <li><a href="telto: 1234567890">Phone: <span itemprop="telephone">(123) 456-7890</span></a></li>
+                    <li><a href="mailto: hello@terrafotuna.com">Email: <span itemprop="email">hello@terrafotuna.com</span></a></li>
+                    <li><a href="#">Website: terrafortuna.com</a></li>
+                </ul>
+            </div>
+            <div class="ftr-connect">
+                <h3>Connect</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img class="social-icons" src="images/iconmonstr-instagram-11.svg" alt="facebook icon"> Instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="social-icons" src="images/iconmonstr-facebook-6.svg" alt="facebook icon"> Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="social-icons" src="images/iconmonstr-youtube-6.svg" alt="facebook icon"> Youtube
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ftr-sitemap">
+                <h3>Sitemap</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+        </div>
         <p>Terra Fortuna &copy; 2022</p>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
