@@ -36,6 +36,10 @@ font-style: italic; */
 
 
 /* ---------- GLOBAL STYLES ---------- */
+html{
+    width: 100%;
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -51,7 +55,7 @@ a {
 
 main {
     position: relative;
-    top: 15vh;
+    top: 3vh;
 }
 
 p {
@@ -383,8 +387,7 @@ footer {
 
 /* ---------- ABOUT PAGE SECTION ---------- */
 .about-1 {
-    padding: 20px 0;
-
+    padding: 30px 0;
 }
 
 .about-1 .box {
@@ -396,7 +399,7 @@ footer {
     background-color: #010b13;
     color: white;
     width: 100%;
-    padding: 20px 0;
+    padding: 50px 0;
 }
 
 .about-2 .box {
@@ -417,11 +420,16 @@ footer {
     cursor: pointer;
 }
 
+.testimonial-section {
+    margin: 50px 0;
+}
+
 .testimonial-section .container{
     display: flex;
     text-align: center;
     margin: 20px;
     border-top: #d3ae57 solid 3px;
+    border-bottom: #d3ae57 solid 3px;
 }
 
 .testimonial-section article {
@@ -588,7 +596,7 @@ footer {
     .video {
         display: flex;
         width: 100%;
-        height: 120vh;
+        /* height: 120vh; */
         justify-content: center;
         background: rgb(0,0,0);
         background: linear-gradient(180deg, rgba(0,0,0,0) 46%, rgba(1,11,19,1) 100%);

@@ -3,6 +3,7 @@
 var isOpen = false;
 
 const targetElement = document.querySelector('.gn-nav');
+// const card = document.querySelector('.card');
 bodyScrollLock.disableBodyScroll(targetElement);
 bodyScrollLock.enableBodyScroll(targetElement);
 
