@@ -44,7 +44,6 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    /* overflow: hidden; */
     background-color: white;
 }
 
@@ -112,7 +111,6 @@ footer {
 .card {
     padding: 20px;
     text-align: center;
-    /* border-top: solid .5px #d3ae57; */
 }
 
 
@@ -146,10 +144,6 @@ footer {
 }
 
 /* ---------- HEADER BURGER ---------- */
-
-/* .menu-wrap {
-    margin-top: 10px;
-} */
 
 .menu-wrap {
     display: flex;
@@ -212,10 +206,6 @@ footer {
     display: none;
 }
 
-/* .gn-nav.is-open {
-    display: block;
-} */
-
 .gn-items li {
     border-top: solid 1px #d3ae57;
 }
@@ -232,7 +222,6 @@ footer {
 
 .hero-slider {
     position: relative;
-    /* top: 94px; */
     width: 100%;
     height: auto;
     background-color: #010b13;
@@ -381,10 +370,6 @@ footer {
     filter: invert(100%);
 }
 
-/* .social-icons li {
-    margin: 0px 0px;
-} */
-
 /* ---------- ABOUT PAGE SECTION ---------- */
 .about-1 {
     padding: 30px 0;
@@ -434,8 +419,6 @@ footer {
 
 .testimonial-section article {
     flex-basis: 33.33%;
-    /* color: white; */
-    /* background-color: #010b13; */
     padding: 80px 20px;
 }
 
@@ -517,9 +500,9 @@ footer {
 }
 
 @media (min-width: 992px) {
-    main{
+    /* main{
         top: 10vh;
-    }
+    } */
 
     .logomark {
         display: none;
@@ -535,8 +518,6 @@ footer {
     }
 
     .wordmark {
-        /* height: 20px;
-        width: 100%; */
         display: inline;
     }
 
@@ -563,7 +544,6 @@ footer {
 
 @media (min-width: 1200px) {
     a:hover {
-        /* font-size: 20px; */
         color: #f1cc73;
         text-decoration: underline;
     }
@@ -587,7 +567,7 @@ footer {
 
 @media (min-width: 1440px) {
     .hero {
-        height: 100vh;
+        /* height: 100vh; */
         width: 100%;
     }
     .hero .hero-slider {
@@ -596,16 +576,13 @@ footer {
     .video {
         display: flex;
         width: 100%;
-        /* height: 120vh; */
         justify-content: center;
         background: rgb(0,0,0);
         background: linear-gradient(180deg, rgba(0,0,0,0) 46%, rgba(1,11,19,1) 100%);
-        /* background-color: #010b13; */
     }
     
     .hero-video {
         position: relative;
-        /* top: 194px; */
         right: 0;
         max-width: 100%;
         max-height: 100%;
